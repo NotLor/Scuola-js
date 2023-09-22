@@ -1,0 +1,31 @@
+body{
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.carta{
+    padding: 5px;
+    width: 40vw;
+    background-color: #fff;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.bordoSup{
+    background-color: rgba(84, 158, 255, 0.699);
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 20px;
+}
