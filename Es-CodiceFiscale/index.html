@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Codice Fiscale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>CALCOLO CODICE FISCALE</h1>
+    <br>
+    <h2>Inserisci i dati per il calcolo del codice fiscale</h2>
+    <br>
+
+    <label for="cognome">COGNOME</label>
+    <input type="text" name="" id="cognome">
+    <br>
+
+    <label for="nome">NOME</label>
+    <input type="text" name="" id="nome">
+    <br>
+
+    <label for="sesso">SESSO</label>
+    <select name="" id="sesso">
+        <option value="M">M</option>
+        <option value="F">F</option>
+    </select>
+    <br>
+
+    <label for="nascita">LUOGO DI NASCITA</label>
+    <input type="text" name="" id="luogo_nascita">
+    <br>
+
+    <label for="provincia">PROVINCIA (SIGLA)</label>
+    <input type="text" name="" id="provincia">
+    <br>
+
+    <label for="data">DATA DI NASCITA</label>
+    <select name="" id="giorno">
+        <script>
+            for (let i = 1; i <= 31; i++) {
+                document.write("<option value='" + i + "'>" + i + "</option>");
+            }
+        </script>
+    </select>
+    <select name="" id="mese">
+        <script>
+            for(let i=1; i<=12; i++){
+                document.write("<option value='" + i + "'>" + i + "</option>");
+            }
+        </script>
+    </select>
+    <select name="" id="anno">
+        <script>
+            for(let i=1900; i<=2023; i++){
+                document.write("<option value='" + i + "'>" + i + "</option>");
+            }
+        </script>
+    </select>
+    <br>
+
+    <button id="calcola">CALCOLA</button>
+    <br>
+
+<script src="script.js"></script>    
+</body>
+
+</html>
