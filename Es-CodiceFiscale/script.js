@@ -556,6 +556,7 @@ calcola.onclick = async function(){
     console.log(codiceFiscale);
     
     //stampo il codice fiscale finale
+    document.getElementById("titoletto").innerHTML = "Il tuo codice fiscale è:";
     document.getElementById("risultato").innerHTML = codiceFiscale;
     
 }

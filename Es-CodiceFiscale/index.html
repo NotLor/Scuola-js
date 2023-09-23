@@ -18,11 +18,11 @@
             <h2>Inserisci i dati per il calcolo del codice fiscale</h2>
         </div>
         <label for="cognome">COGNOME</label>
-        <input type="text" name="" id="cognome">
+        <input required type="text" name="" id="cognome">
         <br>
 
         <label for="nome">NOME</label>
-        <input type="text" name="" id="nome">
+        <input required type="text" name="" id="nome">
         <br>
 
         <label for="sesso">SESSO</label>
@@ -33,7 +33,7 @@
         <br>
 
         <label for="nascita">LUOGO DI NASCITA</label>
-        <input type="text" name="" id="luogo_nascita">
+        <input required type="text" name="" id="luogo_nascita">
         <br>
 
         <label for="data">DATA DI NASCITA</label>
@@ -65,7 +65,9 @@
     <button id="calcola">CALCOLA</button>
     <br>
 
-    <div class="risultato" id="risultato">        
+    <div class="result">
+        <h4 id="titoletto"></h4>
+        <p id="risultato"></p>        
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
 <script src="script.js"></script>    
